@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.mainbox {
+    background-image: url(assets/images/IN-en-20250303-TRIFECTA-perspective_d5f81427-d6cf-412d-8e86-2315671b9be1_large.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* they make the background image sit perfectly in the middle of the element without repeating */
+    background-size: max(1200px, 100vw);
+    /* in every case image will cover entire width */
+    height: auto;
+    /* resize height according to the need of width */
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    /* The position is relative so that we can change it */
+}
+
+.mainbox .box {
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    /* position is absolute to the mainbox, and top:0 means it is 0px away from the top(which means they will overlap) */
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    top:1.5rem;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+    top:1.5rem;
+}
+
+#navbar {
+    /* display flex in the parent of navbar */
+    max-width: 70vw;
+    margin: auto;
+    /* margin auto will bring reduced navbar in the middle */
+    display: flex;
+    justify-content: space-between;
+    /* It will give space between two blocks(span, div etc) */
+    background:transparent;  
+}
+
+.main-content{
+    color: #fff;
+    text-align: center;
+}
+
