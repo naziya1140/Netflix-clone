@@ -136,14 +136,18 @@ nav button{
 }
 
 .separation{
+    position: relative;
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
     background: radial-gradient(50% 500% at 50% -420%,
      rgba(64, 97, 231, 0.4) 80%,
      rgba(0, 0, 0, 0.1) 100%),
       black;
-
-    height: 50px;
-    border-top-right-radius: 50% 100%;
-    border-top-left-radius: 50% 100%;
-    border: 5px solid red;
-    border-bottom: none;
+    border-top: 4px solid rgb(182, 2, 2); /* Red curved border */
+    border-radius: 90% 100% / 100% 100%;
+ 
+    mask-image: linear-gradient(to right, transparent, red, red, rgb(211, 6, 6));
+    -webkit-mask-image: linear-gradient(to right, transparent, red, red, transparent);
 }
+
+.trending
