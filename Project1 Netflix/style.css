@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Martel Sans", sans-serif;
+    font-family: poppins;
 }
 
 body{
@@ -150,4 +150,52 @@ nav button{
     -webkit-mask-image: linear-gradient(to right, transparent, red, red, transparent);
 }
 
-.trending
+ul{
+    display: flex;
+    padding-right: 140px;
+    padding-left: 140px;
+}
+
+li{
+    padding: 27px;
+}
+
+li img{
+    border-radius: 12px;
+}
+
+#prev-btn{
+    height: 7.5rem;
+    width: 2.2rem;
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 5px;
+    border: #1e1e1e;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#next-btn{
+    height: 7.5rem;
+    width: 2.2rem;
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 5px;
+    border: #1e1e1e;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#prev-btn:hover, #next-btn:hover {
+background-color: #515050;
+}
+
+.big-font{
+    font-size: 6rem;
+    color: white;
+    border: 5px solid black;
+    font-weight: 900;
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+}
